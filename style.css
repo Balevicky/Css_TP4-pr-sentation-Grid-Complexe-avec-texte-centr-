@@ -1,0 +1,43 @@
+/* body {
+  background: blue;
+} */
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-around;
+  border: 2px solid black;
+  border-radius: 5px;
+  grid-template-areas:
+    "yel yel pur "
+    "re gre pur "
+    "re plu plu";
+  gap: 5px;
+  min-height: 100vh;
+}
+/* Centrer verticalement et horizontalement le text dans la boite */
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-grid :nth-child(1) {
+  grid-area: yel;
+  background: yellow;
+}
+.container-grid :nth-child(2) {
+  grid-area: pur;
+  background: purple;
+}
+.container-grid :nth-child(3) {
+  grid-area: re;
+  background: red;
+}
+.container-grid :nth-child(4) {
+  grid-area: gre;
+  background: green;
+}
+.container-grid :nth-child(5) {
+  grid-area: plu;
+  background: plum;
+}
